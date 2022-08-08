@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ble1bro.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Game</title>
+</head>
+<body>
+    <section class="Buttons">
+        <div id="reload">Start Over</div>
+        <div id="randomize">Randomize</div>
+        <article id="mute"><img src="/assets/Mute.png" alt="mute" ></article>
+        
+    </section>
+    <div class="Board" id="Board">
+        <div class="Card" id="1"></div> 
+        <div class="Card" id="2"></div> 
+        <div class="Card" id="3"></div> 
+        <div class="Card" id="4"></div> 
+        <div class="Card" id="5"></div> 
+        <div class="Card" id="6"></div> 
+        <div class="Card" id="7"></div> 
+        <div class="Card" id="8"></div> 
+        <img class="ghostImg" src="./assets/ghost.svg"></img>
+    </div>
+    <button class="congratulations" id="congratulations"><h3>Congratulations</h3></button>
+    <div class="Footer">
+        <div class="points">
+            <h2 class="points-label">Punkty: </h2>
+            <h2 class="points-value" id="points-value">0</h2>
+        </div>
+    </div>
+    <section id="myModal" class="modal">
+        <div class="modal-content">
+          <h3>You did it!</h3>
+          <p>I'm proud of you</p>
+        </div>
+      </section>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
